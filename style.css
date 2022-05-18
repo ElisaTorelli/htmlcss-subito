@@ -4,3 +4,375 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+
+li{
+    display:inline;
+    padding: 8px;
+}
+
+a,
+.prova-tutto-section p{
+    text-decoration: none;
+    color: rgb(122, 120, 120);
+    list-style-type: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* LINKS SETTINGS */
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.nav ul li a span{
+    color: lightgray;
+    padding: 4px;
+}
+
+/* LOGO & ACTION CONTAINER */
+.index-container{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dfe3ed;
+    border-top: 1px solid #dfe3ed;
+    height: 80px;
+    padding: 0 20px;
+    align-items: center;
+}
+
+/* SUBITO LOGO */
+.index-container div:first-of-type{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.index-container a img{
+    border: 0;
+    width: 230px;
+}
+
+.actions{
+    padding-left: 30px;
+}
+
+#accedi{
+    font-weight: bold;
+    color: rgb(61, 58, 58);
+    padding-right: 16px;
+}
+
+.add-button{
+    background-color: #feeceb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 8%;
+}
+
+.add-button a{
+    color: salmon;
+}
+
+/* + BUTTON SPAN */
+.add-button span{
+    border: 2px solid #fa7b75;
+    border-radius: 20%;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.add-button:hover{
+    border: 1px solid #da443c;
+}
+
+/* FORM SEARCHBAR */
+.form-searchbar{
+    background-color: #fff;
+    margin-bottom: 48px;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 4px;
+    box-shadow: 0 10px 24px 0 rgb(0 0 0 / 10%);
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+/* FORM SECTION */
+.form-searchbar label div{
+    padding: 8px;
+}
+
+
+/* SEARCH RED BUTTON */
+.material-symbols-outlined{
+    background-color: #f9423a;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* SECOND SECTION */
+.vertical-rows-section h2{
+    font-size: 20px;
+    line-height: 24px;
+    color: #717e8f;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* COLORED BOXES SECTION*/
+.colored-boxes{
+    width: 100%;
+    height: 148px;
+    padding: 30px 8px 8px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 8px;
+}
+
+.blue{
+    background-color: #2650ff;
+}
+
+.yellow{
+    background-color: #f2a700;
+}
+
+.purple{
+    background-color: #9924ff;
+}
+
+.green{
+    background-color: #07bb9c;
+}
+
+/* PROVA TUTTO SIDE IMAGE TEXT */
+.prova-tutto-section{
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.prova-tutto-section h2,
+.prova-tutto-section a{
+    padding: 16px 0;
+}
+
+.prova-tutto-section a{
+    color: red;
+    font-weight: 600;
+}
+
+.sub-section{
+    display: flex;
+}
+
+/* RED BUTTONS ON IMAGES */
+.pay-button{
+    height: 40px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9423a;
+    color: #fff;
+    margin-top: 16px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* IMAGES RESIZE */
+.first-img img,
+.second-img img{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    padding-right: 20px;
+}
+
+/* INSERISCI ANNUNCIO SECTION */
+.inserisci-annuncio img{
+    width: 100%;
+    height: 200px;
+    border: 1px solid gray;
+    margin-top: 32px;
+}
+
+.inserisci-btn{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 11px 16px;
+    display: flex;
+}
+
+/* GREEN SECTION */
+.green-image{
+    border-radius: 4px;
+    background-image: url("./img/HP_BOX_earth_day_20220426.jpg");
+    padding-top: 56.25%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+/* GREEN SECTION TEXT */
+.green-section-side-text h4{
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 18px;
+    color: #f9423a;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* SAFE SECTION */
+/* .gray-section{
+    background-color: #f7f8fc;
+    margin-top: 60px;
+}
+.gray-section h2{
+    padding: 30px 16px;
+    color: #444357;
+    font-size: 20px;
+}
+.gray-section-images{
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+    height: 170px;
+} */
+/* 
+.img-info{
+
+} */
+
+/* DOWNLOAD SECTION */
+.download-section{
+    padding: 24px 16px 32px;
+    border-radius: 4px;
+    background-color: #f7f8fb;
+    text-align: center;
+}
+.download-section p{
+    line-height: 24px;
+    margin-top: 4px;
+    font-size: 16px;
+    color: #717e8f;
+}
+
+.app-widget{
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+#google-play{
+    padding-right: 20px;
+}
+
+/************************** LAST SECTION **************************/
+/* GENERAL TEXT SETTINGS */
+.last-section{
+    border-top: 1px solid #dfe3ed;
+    margin: 48px;
+    text-align: left;
+}
+.colored-title{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 24px auto;
+}
+.text-box{
+    color: #717e8f;
+    font-size: 12.5px;
+    line-height: 20px;
+}
+.text-box p{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 16px 0;
+}
+
+/* FIRST TEXT SECTION */
+.first-text-section h2{
+    padding-top: 24px;
+    font-size: 22px;
+    color: #4c4151;
+}
+.blue-text{
+    color: #2650ff;
+}
+
+/* SECOND TEXT SECTION */
+.yellow-text{
+    color: #f2a700;
+}
+
+/* THIRD TEXT SECTION */
+.purple-text{
+    color: #9924ff;
+}
+
+/* FOURTH TEXT SECTION */
+.green-text{
+    color: #07bb9c;
+}
+.fourth-text-section{
+    border-bottom: 1px solid #dfe3ed;
+    padding: 30px 0;
+}
+
+/************************** LAST LINKS SECTION**************************/
+.links-section{
+    display: flex;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #717e8f;
+}
+
+h5{
+    color: #7a7c7f;
+    font-weight: 800;
+}
+
+.links a{
+    margin: 10px 0;
+}
+
+/* COPYRIGHT SECTION */
+.copyright-section{
+    text-align: center;
+    color: #7a7c7f;
+}
+.copyright-section img{
+    width: 136px;
+    height: 32px;
+    margin-bottom: 32px;
+}
