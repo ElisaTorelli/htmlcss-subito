@@ -294,22 +294,25 @@ a:hover{
 
 /* GREEN SECTION */
 .green-section{
-    
+    height: 300px;
+    display: flex;
 }
 
-
-
-
-/* .green-image{
-    border-radius: 4px;
+.green-image{
     background-image: url("./img/HP_BOX_earth_day_20220426.jpg");
-    padding-top: 56.25%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: 50%;
     background-size: cover;
-    position: relative;
-} */
+    flex-basis: 60%;
+    border-radius: 5px;
+}
+
+.green-section-side-text{
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 50%;
+    color: #7a7c7f;
+}
 
 /* GREEN SECTION TEXT */
 .green-section-side-text h4{
@@ -322,25 +325,52 @@ a:hover{
 }
 
 /* SAFE SECTION */
-/* .gray-section{
-    background-color: #f7f8fc;
-    margin-top: 60px;
+.safe-section-s{
+    margin-top: 100px;
+    padding: 24px 48px;
+    background-color: white;
 }
-.gray-section h2{
-    padding: 30px 16px;
-    color: #444357;
-    font-size: 20px;
-}
-.gray-section-images{
-    display: flex;
-    justify-content: space-between;
-    width: 360px;
-    height: 170px;
-} */
-/* 
-.img-info{
 
-} */
+.safe-section-s p{
+    color: #f9423a;
+    margin-top: 8px;
+}
+
+.safe-section-s span{
+    color: #4c4151;
+    font-size: bold;
+}
+
+.s-section{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.safe-section{
+    height: 250px;
+    flex-basis: calc(100% / 3);
+    display: flex;
+    align-items: flex-end;
+    padding: 8px;
+    margin: 10px;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.img-1{
+    background-image: url("./img/safety1.webp");
+}
+.img-2{
+    background-image: url("./img/safety2.webp");
+}
+.img-3{
+    background-image: url("./img/safety3.webp");
+}
+
 
 /* DOWNLOAD SECTION */
 .download-section{
