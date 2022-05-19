@@ -1,7 +1,17 @@
 /* GENERAL SETTINGS */
+@font-face {
+    font-family: "LFT Etica";
+    src: url("./assets/font/LFTEtica.eot");
+    src: url("./assets/font/LFTEtica.eot?#iefix") format("embedded-opentype"),
+        url("./assets/font/LFTEtica.woff2") format("woff2"), url("./assets/LFTEtica/LFTEtica.woff") format("woff"),
+        url("./assets/font/LFTEtica.ttf") format("truetype");
+}
+
+
 *{
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'LFT Etica';
+    /* font-style: sans-serif; */
     margin: 0;
     padding: 0;
 }
