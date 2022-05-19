@@ -53,7 +53,6 @@ a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .index-container a img{
@@ -140,26 +139,20 @@ a:hover{
 
 .material-symbols-outlined {
     position: relative;
-    background-color: red;
+    background-color: rgb(241, 111, 111);
     border: none;
-}
-
-.material-symbols-outlined::before {
-    content: "";
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 70%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    text-align: center;
+    line-height: 30px;
     border-radius: 6px;
 }
 
 .material-symbols-outlined:hover {
     border-color: grey;
-}
-
-.material-symbols-outlined {
-    fill: #aeb9c6;
 }
 
 /* EXPLORE SECTION */
@@ -223,74 +216,79 @@ a:hover{
     background-color: #07bb9c;
 }
 
-.prova-tutto-section h2,
-.prova-tutto-section a{
-    padding: 16px 0;
-}
 
-.prova-tutto-section a{
-    color: red;
-    font-weight: 600;
-}
-
-.sub-section{
+/* PROVA TUTTO SUBITO SECTION */
+.paga-subito {
     display: flex;
+    margin-top: 60px;
 }
 
-/* RED BUTTONS ON IMAGES */
-.pay-button{
-    height: 40px;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9423a;
-    color: #fff;
-    margin-top: 16px;
-    padding: 8px;
-    border-radius: 4px;
+.paga-subito > * {
+    flex-basis: calc(100% / 3);
 }
 
-/* IMAGES RESIZE */
-.first-img img,
-.second-img img{
-    width: 300px;
-    height: 200px;
-    display: flex;
-    padding-right: 20px;
+.paga-subito-text{
+    align-self: center;
+    color: #4c4151;
 }
+
+.paga-subito-text a{
+    color: #f9423a;
+}
+
+.paga-subito-container{
+    height: 216px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.paga-subito-container:first-of-type {
+    margin-right: 16px;
+}
+
+.box-1{
+    background-image: url("./img/pay.webp");
+}
+
+.box-2{
+    background-image: url("./img/sell.webp");
+}
+
+.subito-button{
+    background-color: rgb(241, 111, 111);
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
 
 /* INSERISCI ANNUNCIO SECTION */
 .inserisci-annuncio{
-    background-image: url("./img/001_DESKTOP_inserisciannuncio.jpg");
-    background-size: contain;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 56px 0;
+    border: 1px solid lightgray;
+    margin: 48px auto;
     height: 150px;
     border-radius: 5px;
-    border: 1px solid lightgray;
+    background: url("./img/001_DESKTOP_inserisciannuncio.jpg") left center no-repeat;
+    background-size: contain;
 }
 
-.inserisci-btn{
-    font-size: 16px;
-    line-height: 24px;
-    padding: 11px 16px;
-    display: flex;
-}
-
-.inserisci-annuncio h2{
+.inserisci-annuncio-text{
     color: gray;
+    flex-basis: 40%;
+    margin-left: 235px;
 }
-.inserisci-annuncio p{
+
+.inserisci-annuncio-text p {
     color: lightgray;
 }
 
-.inserisci-annuncio div{
-    flex-basis: 40%;
-    margin-left: 230px;
-}
 
 /* GREEN SECTION */
 .green-section{
