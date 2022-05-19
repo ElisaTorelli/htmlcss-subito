@@ -71,75 +71,110 @@ a:hover{
     padding-right: 16px;
 }
 
-.add-button{
+/* BUTTON ICON */
+.btn {
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    border: 1px solid red;
+}
+
+.btn__img {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.text-button {
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.red-button {
     background-color: #feeceb;
+    color: red;
+    fill: red;
+}
+
+
+/******************************** FORM SEARCHBAR */
+.search-form {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 8%;
+    padding: 24px;
+    color: grey;
+    box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 7px;
 }
 
-.add-button a{
-    color: salmon;
+.search-form  div:not(:last-child) {
+    flex-grow: 1;
+    margin: 0 0.3em;
 }
 
-/* + BUTTON SPAN */
-.add-button span{
-    border: 2px solid #fa7b75;
-    border-radius: 20%;
-    margin: 10px;
-    height: 50px;
-    width: 50px;
+.search-textcaption {
+    margin-bottom: 0.5em;
 }
 
-.add-button:hover{
-    border: 1px solid #da443c;
-}
-
-/* FORM SEARCHBAR */
-.form-searchbar{
-    background-color: #fff;
-    margin-bottom: 48px;
-    padding: 40px;
-    margin-top: 50px;
-    border-radius: 4px;
-    box-shadow: 0 10px 24px 0 rgb(0 0 0 / 10%);
+.input {
+    padding: 0.7em;
+    border-radius: 5px;
+    border: 1px solid lightgray;
     display: flex;
-    justify-content: space-between;
-    font-weight: bold;
 }
 
-/* FORM SECTION */
-.form-searchbar label div{
-    padding: 8px;
+.input__text {
+    font-size: 16px;
+    color: gray;
+    border: none;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.input__text::placeholder {
+    font-size: 16px;
+    color: gray;
 }
 
 
-/* SEARCH RED BUTTON */
-.material-symbols-outlined{
-    background-color: #f9423a;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 24px;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.material-symbols-outlined {
+    position: relative;
+    background-color: red;
+    border: none;
 }
+
+.material-symbols-outlined::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+}
+
+.material-symbols-outlined:hover {
+    border-color: grey;
+}
+
+.material-symbols-outlined {
+    fill: #aeb9c6;
+}
+
 
 /* SECOND SECTION */
-.vertical-rows-section h2{
+/* .vertical-rows-section h2{
     font-size: 20px;
     line-height: 24px;
     color: #717e8f;
     text-align: center;
     margin-bottom: 16px;
-}
+} */
 
 /* COLORED BOXES SECTION*/
-.colored-boxes{
+/* .colored-boxes{
     width: 100%;
     height: 148px;
     padding: 30px 8px 8px;
@@ -147,6 +182,51 @@ a:hover{
     display: flex;
     justify-content: space-evenly;
     border-radius: 8px;
+} */
+
+/* EXPLORE SECTION */
+.box-title {
+    margin: 48px 0;
+    text-align: center;
+    color: gray;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 1.5em;
+    padding-top: 2.5em;
+    padding-bottom: 1.5em;
+}
+
+.card__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.card__btn {
+    position: relative;
+    margin-top: 32px;
+    width: 180px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.card__btn:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .blue{
@@ -164,6 +244,7 @@ a:hover{
 .green{
     background-color: #07bb9c;
 }
+
 
 /* PROVA TUTTO SIDE IMAGE TEXT */
 .prova-tutto-section{

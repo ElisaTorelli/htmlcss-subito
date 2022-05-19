@@ -37,66 +37,120 @@
                         <img src="./img/corporate.svg" alt="subito logo">
                     </a>
                 </div>
-                <div class="actions">
+                <div class="right-header">
                     <a href="#" id="accedi">Accedi</a>
                     <a href="#">Registrati</a>
                 </div>
-                <div class="add-button">
-                    <a href="#"> <span>+</span> Inserisci annuncio</a>
-                </div>
+                <a class="btn red-button bold" href="#">
+                    <svg class="btn__img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                        d="M8 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm0-2h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm5 8h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3H8a1 1 0 0 1 0-2h3V8a1 1 0 0 1 2 0v3z"
+                        ></path>
+                    </svg>
+                    <span class="text-button"> Inserisci annuncio </span>
+                </a>
             </div>
         </header>
 
         <!-- MAIN SECTION FORMS -->
-        <main class="layout-section">
+        <main>
+        <!-- SEARCH SECTION -->
+        <section class="search-section">
+            <form class="search-form" action="/#" method="post">
+
             <div>
-                <form action="input">
-                    <div class="form-searchbar">
-                        <label for="Cosa cerchi?">Cosa cerchi?
-                            <div>
-                                <input type="text" placeholder="Vespa, Iphone, Bilocale">
-                            </div>
-                        </label>
-
-                        <label for="In quale categoria?">In quale categoria?
-                            <div>
-                                <select name="options" id="options">
-                                    <option value="#">Tutte le categorie</option>
-                                    <option value="#">Immobili</option>
-                                    <option value="#">Market</option>
-                                    <option value="#">Macchine</option>
-                                </select>
-                            </div>
-                        </label>
-
-                        <label for="Dove?">Dove?
-                            <div>
-                                <input type="text" placeholder="Tutta Italia">
-                            </div>
-                        </label>
-
-                        <!-- SEARCH BUTTON -->
-                        <div>
-                                <span class="material-symbols-outlined">
-                                    search
-                                    </span>
-                        </div>
-                    </div>
-                    <div>
-                    </div>
-                    <div>
-                    </div>
-                </form>
+                <p class="search-text bold">Cosa cerchi?</p>
+                <div class="input">
+                <svg class="input__icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    d="M15.597 14.205a.989.989 0 01.098.086l5.014 5.014a.993.993 0 11-1.404 1.404l-5.014-5.014a1.002 1.002 0 01-.086-.098 7 7 0 111.392-1.392zM10 15a5 5 0 100-10 5 5 0 000 10z"
+                />
+                </svg>
+                <input class="input__text" type="text" name="search_query" id="search_query" placeholder="Vespa, iPhone, Bilocale"
+                />
+                </div>
             </div>
+
+            <div>
+                <p class="search__caption bold">In quale categoria?</p>
+                <div class="input">
+                <svg class="input__icon" width="28" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M4 2h5a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v5h5V4H4zm0 9h5a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2v-5a2 2 0 012-2zm0 2v5h5v-5H4zM15 2h5a2 2 0 012 2v5a2 2 0 01-2 2h-5a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v5h5V4h-5zm0 9h5a2 2 0 012 2v5a2 2 0 01-2 2h-5a2 2 0 01-2-2v-5a2 2 0 012-2zm0 2v5h5v-5h-5z"
+                />
+                </svg>
+                <select class="input__text" id="category" name="options" title="options">
+                    <option value="options-choice" selected>Tutte le categorie</option>
+                    <option value="first-option">Motori</option>
+                    <option value="second-option">Categoria 2</option>
+                    <option value="third-option">Categoria 3</option>
+                </select>
+                </div>
+            </div>
+
+            <div>
+                <p class="search__caption bold">Dove?</p>
+                <div class="input">
+                <svg class="input__icon" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                    <g id="Pin" stroke="none" stroke-width="1" fill="#aeb9c6" fill-rule="evenodd">
+                    <path
+                        d="M12 22c-5.333-5.054-8-9.054-8-12a8 8 0 1116 0c0 2.946-2.667 6.946-8 12zM6 10c0 2.008 1.969 5.156 6 9.207 4.031-4.051 6-7.2 6-9.207a6 6 0 10-12 0zm6 3a3 3 0 110-6 3 3 0 010 6zm0-2a1 1 0 100-2 1 1 0 000 2z"
+                    ></path>
+                    </g>
+                </svg>
+                <input class="input__text" type="text" name="location" id="location" placeholder="Comune, Provincia o Regione"
+                />
+                </div>
+            </div>
+
+            <!-- SEARCH BUTTON -->
+                <div>
+                    <span class="material-symbols-outlined">search
+                    </span>
+                </div>
+            </form>
+        </section>
         </main>
 
-        <!-- SECOND SECTION -->
-        <section class="vertical-rows">
+        <!-- COLORED BOXES SECTION -->
+        <section class="explore">
+            <h2 class="box-title">Esplora le nostre sezioni</h2>
+            <div class="rows">
+            
+                <!-- BLUE SECTION -->
+            <div class="card blue">
+                <img class="card__img" src="./img/motori-desktop-white.svg" alt="Motori" />
+                <button class="card__btn bold">Cerca in Motori</button>
+                </div>
+
+                <!--YELLOW SECTION  -->
+                <div class="card yellow">
+                <img class="card__img" src="./img/market-desktop-white.svg" alt="Market" />
+                <button class="card__btn bold">Cerca in Market</button>
+                </div>
+
+                <!-- PURPLE SECTION -->
+                <div class="card purple">
+                <img class="card__img" src="./img/immobili-desktop-white.svg" alt="Immobili" />
+                <button class="card__btn bold">Cerca in Immobili</button>
+                </div>
+
+                <!-- GREEN SECTION -->
+                <div class="card green">
+                <img class="card__img" src="./img/lavoro-desktop-white.svg" alt="Lavoro" />
+                <button class="card__btn bold">Cerca in Lavoro</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section class="vertical-rows">
             <div class="vertical-rows-section">
                 <h2>Esplora le nostre sezioni</h2>
-            </div>
+            </div> -->
             <!-- COLORED BOXES SECTION -->
-            <div class="colored-boxes">
+            <!-- <div class="colored-boxes">
                     <div class="blue">
                         <img src="./img/motori-desktop-white.svg" alt="motori img">
                     </div>
@@ -109,7 +163,9 @@
                     <div class="green">
                         <img src="./img/lavoro-desktop-white.svg" alt="lavoro img">
                     </div>
-            </div>
+            </div> -->
+
+
 
             <!-- PROVA TUTTO SUBITO SECTION -->
             <div class="prova-tutto-section">
