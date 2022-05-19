@@ -50,6 +50,14 @@ a:hover{
     justify-content: space-between;
 }
 
+.right-header{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+
 /* SUBITO LOGO */
 .index-container div:first-of-type{
     align-items: center;
@@ -123,11 +131,12 @@ a:hover{
     border-radius: 5px;
     border: 1px solid lightgray;
     display: flex;
-    padding: 0.7em;
+    padding: 0.5em;
 }
 
 .input__text {
     border: none;
+    outline: none;
     color: gray;
     font-size: 16px;
     margin-left: 10px;
@@ -139,20 +148,34 @@ a:hover{
     font-size: 16px;
 }
 
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .material-symbols-outlined {
     background-color: rgb(241, 111, 111);
+    padding: 0.5em;
+    display: flex;
+    
+
+
+    /* background-color: rgb(241, 111, 111);
     border: none;
     border-radius: 6px;
     height: 70%;
     line-height: 30px;
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 100%; */
 }
+
 
 .material-symbols-outlined:hover {
     border-color: grey;
 }
+
 
 /* EXPLORE SECTION */
 .box-title {
