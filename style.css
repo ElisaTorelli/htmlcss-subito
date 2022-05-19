@@ -104,8 +104,8 @@ a:hover{
 
 .red-button {
     background-color: #feeceb;
-    color: red;
-    fill: red;
+    color: #f9423a;
+    fill: #f9423a;
 }
 
 
@@ -155,20 +155,11 @@ a:hover{
 }
 
 .material-symbols-outlined {
-    background-color: rgb(241, 111, 111);
+    background-color: #f9423a;
     padding: 0.5em;
     display: flex;
-    
-
-
-    /* background-color: rgb(241, 111, 111);
-    border: none;
     border-radius: 6px;
-    height: 70%;
-    line-height: 30px;
-    position: relative;
-    text-align: center;
-    width: 100%; */
+    color: #f7f8fb;
 }
 
 
@@ -283,7 +274,7 @@ a:hover{
 }
 
 .subito-button{
-    background-color: rgb(241, 111, 111);
+    background-color: #f9423a;
     color: white;
     margin: 0 auto;
     margin-bottom: 1em;
