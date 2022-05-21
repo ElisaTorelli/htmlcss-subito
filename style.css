@@ -764,6 +764,7 @@ span.input__icon{
 
     .subito-button{
         bottom: -50px;
+        color: white;
         display: block;
         font-size: 13px;
         height: 32px;
@@ -831,16 +832,17 @@ span.input__icon{
     .green-image {
         flex-basis: 100%;
         padding-top: 56%;
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     .green-section-side-text {
         margin-top: 16px;
+        padding-left: 16px;
         flex-basis: 100%;
     }
 
     .green-section-side-text h4 {
-        margin-bottom: 1em;
+        margin-bottom: 16px;
     }
 
     /* SAFE SECTION */
