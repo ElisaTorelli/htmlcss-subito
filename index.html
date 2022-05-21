@@ -1,87 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- MEDIA QUERY -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subito - Scopri il nuovo servizio TuttoSubito - Annunci gratuiti</title>
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Subito - Scopri il nuovo servizio TuttoSubito - Annunci gratuiti</title>
+    
     <!-- CSS LINK -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- GOOGLE ICONS -->
+    <!-- ICONS LINK-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
+    </head>
 
-<body>
+
+    <body>
     <!------------------------------------- GENERAL CONTAINER ------------------------------------->
     <div class="container">
-        <!-- HEADER -->
-        <header>
-            <navbar class="nav">
-                <!-- LINKS SECTION -->
-                <ul>
-                    <li><a href="#">Magazine <span>|</span></a></li>
-                    <li><a href="#">Consigli per la vendita <span>|</span></a></li>
-                    <li><a href="#">Negozi e Aziende <span>|</span></a></li>
-                    <li><a href="#">Subito per le Aziende <span>|</span></a></li>
-                    <li><a href="#">Aiuto <span>|</span></a></li>
-                    <li><a href="#">Ricerche salvate <span>|</span></a></li>
-                    <li><a href="#">Preferiti</a></li>
-                </ul>
-            </navbar>
+        <!-- MAIN NAVBAR -->
+        <navbar class="navbar">
+        <!-- LINKS SECTION -->
+        <ul>
+            <li class="navbar-links"><a href="#">Magazine |</a></li>
+            <li class="navbar-links"><a href="#">Consigli per la vendita |</a></li>
+            <li class="navbar-links"><a href="#">Negozi e Aziende |</a></li>
+            <li class="navbar-links"><a href="#">Subito per le Aziende |</a></li>
+            <li class="navbar-links"><a href="#">Aiuto |</a></li>
+            <li class="navbar-links"><a href="#">Ricerche salvate |</a></li>
+            <li class="navbar-links"><a href="#">Preferiti</a></li>
+        </ul>
+    </navbar>
 
-            <!-- LOGO & ACTION CONTAINER -->
-            <div class="index-container">
-                <div>
-                    <a href="#">
-                        <img src="./img/corporate.svg" alt="subito logo">
-                    </a>
-                </div>
-                <div class="right-header">
-                    <a href="#" id="accedi">Accedi</a>
-                    <a href="#">Registrati</a>
-                </div>
-                <a class="btn red-button" href="#">
-                    <svg class="btn__img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                        d="M8 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm0-2h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm5 8h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3H8a1 1 0 0 1 0-2h3V8a1 1 0 0 1 2 0v3z"
-                        ></path>
-                    </svg>
+    <!-- FULL WIDTH HEADER -->
+    <header class="header bottom-border">
+        <a href="#">
+            <h1>
+                <img class="full-width-logo" src="./img/corporate.svg" alt="logo">
+            </h1>
+        </a>
+        <div class="header__right">
+            <!-- OPTIONS -->
+            <a href="#"><span class="header__item bold">Accedi</span></a>
+            <a href="#"><span class="header__item">Registrati</span></a>
+            <a class="btn btn--red bold" href="#">
+            <svg class="btn__img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M8 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm0-2h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm5 8h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3H8a1 1 0 0 1 0-2h3V8a1 1 0 0 1 2 0v3z"></path>
+            </svg>
+            <!-- ADD AD RED BTN -->
+            <span class="button-text"> Inserisci annuncio </span>
+            </a>
+        </div>
+    </header>
 
-                    <!-- SEARCH ICON BUTTON -->
-                    <span class="text-button"> Inserisci annuncio </span>
-                </a>
-            </div>
-        </header>
 
-        <!------------------------------------- MAIN SECTION FORMS ------------------------------------->
+    <!------------------------------------- HEADER MOBILE RESPONSIVE ------------------------------------->
+    <header class="header__mobile bottom-border">
+        <!-- HOME ICON -->
+        <div class="header__item header--text-grey">
+            <a href="#">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill-rule="nonzero">
+                    <path
+                    d="M20.604 12.12l-2.244.838c-.322.12-.693-.025-.823-.324l-3.491-7.99c-.13-.3.027-.643.35-.763l2.244-.   838c322-.121.693.024.824.323l3.49 7.99c.13.3-.027.643-.35.763M14.84 13.335l-1.505 1.505a.552.552 0 0 1-.   7780L5.16 7.443a.552.552 0 0 1 0-.778L6.665 5.16a.551.551 0 0 1 .777 0l7.398 7.397a.552.552 0 0 1 0 .  778M12957 18.36l-.838 2.244c-.12.323-.463.48-.762.35l-7.99-3.491c-.3-.13-.445-.501-.325-.824l.84-2.244c.12-.  322463-.48.76-.35l7.992 3.492c.299.13.444.5.323.824"
+                    ></path>
+                </g>
+            </svg>
+            <p>home</p>
+            </a>
+        </div>
+
+        <!-- CERCA GRAY ICON -->
+        <div class="header__item header-gray-icon">
+            <a href="#">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.597 14.205a.989.989 0 01.098.086l5.014 5.014a.993.993 0 11-1.404 1.404l-5.014-5.014a1.002 1.002 0 01-.086-.098 7 7 0 111.392-1.392zM10 15a5 5 0 100-10 5 5 0 000 10z"/>
+            </svg>
+            <p>cerca</p>
+            </a>
+        </div>
+
+        <!-- INSERISCI GRAY ICON -->
+        <div class="header__item header-gray-icon">
+            <a href="#">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M8 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm0-2h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5  5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm5 8h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3H8a1 1 0 0 1 0-2h3V8a1 1 0 0 1 2 0v3z"></path>
+            </svg>
+            <p>Inserisci</p>
+            </a>
+        </div>
+
+        <!-- MESSAGGI GRAY ICON -->
+        <div class="header__item header-gray-icon">
+            <a href="#">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M6 19H5a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7.667L9.2 20.6A2 2 0 0 1 6 19zm13-2a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3v2l2.667-2H19zM9 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                fill-rule="evenodd"></path>
+            </svg>
+            <p>Messaggi</p>
+            </a>
+        </div>
+
+        <!-- ENTRA GRAY ICON -->
+        <div class="header__item header-gray-icon">
+            <a href="#">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill-rule="evenodd">
+                <path
+                d="M12 3a5 5 0 013.824 8.22C17.96 11.89 20 14.068 20 17.678v.775c0 1.082-.539 1.856-1.376 2.257-.461.221-.9.291-1.24.291H6.617c-.339 0-.778-.07-1.24-.29C4.539 20.307 4 19.533 4 18.451v-.775c0-3.61 2.04-5.788 4.176-6.456A5 5 0 0112 3zm0 2a3 3 0 100 6 3 3 0 000-6zm-2.423 8c-.332 0-1.205.287-1.891.8C6.626 14.594 6 15.827 6 17.677v.775c0 .274.067.37.24.453.142.069.309.095.375.095h10.77c.067 0 .233-.026.376-.095.172-.082.239-.179.239-.453v-.775c0-1.85-.626-3.083-1.686-3.877-.686-.513-1.559-.8-1.89-.8H9.576z"
+                id="a"
+                ></path>
+            </svg>
+            <p>entra</p>
+            </a>
+        </div>
+    </header>
+
+        <!-- MAIN -->
         <main>
-        <!-- SEARCH SECTION FORMS -->
-        <section class="search-section">
-            <form class="search-form" action="/#" method="post">
+        <!-- RESPONSIVE SUBITO LOGO -->
+        <h1 id="logo-mobile" class="full-width-logo">
+            <a href="#">
+                <img src="./img/corporate.svg" alt="subito.it logo img" />
+            </a>
+        </h1>
 
-            <div>
-                <p class="search-text bold">Cosa cerchi?</p>
+        <!-- COSA CERCHI SECTION -->
+        <section class="search">
+            <div class="search-item-form" action="/#" method="post">
+
+            <!-- 1 FORM -->
+            <div class="first-form">
+                <p class="search-form-text bold">Cosa cerchi?</p>
+                <h2 class="search-form-text bold">Cosa cerchi?</h2>
                 <div class="input">
-                <svg class="input__icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.597 14.205a.989.989 0 01.098.086l5.014 5.014a.993.993 0 11-1.404 1.404l-5.014-5.014a1.002 1.002 0 01-.086-.098 7 7 0 111.392-1.392zM10 15a5 5 0 100-10 5 5 0 000 10z"/>
+                    <svg class="input__icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.597 14.205a.989.989 0 01.098.086l5.014 5.014a.993.993 0 11-1.404 1.404l-5.014-5.014a1.002 1.002 0 01-.086-.098 7 7 0 111.392-1.392zM10 15a5 5 0 100-10 5 5 0 000 10z"
+                    />
                 </svg>
-                <input class="input__text" type="text" name="search_query" id="search_query" placeholder="Vespa, iPhone, Bilocale"
+                <input
+                    class="input__text"
+                    type="text"
+                    name="search_query"
+                    id="search_query"
+                    placeholder="Vespa, iPhone, Bilocale"
                 />
                 </div>
             </div>
 
-            <div>
-                <p class="search__caption bold">In quale categoria?</p>
+            <!-- 2 FORM -->
+            <div class="first-form">
+                <p class="search-form-text bold">In quale categoria?</p>
                 <div class="input">
                 <svg class="input__icon" width="28" height="24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 2h5a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v5h5V4H4zm0 9h5a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2v-5a2 2 0 012-2zm0 2v5h5v-5H4zM15 2h5a2 2 0 012 2v5a2 2 0 01-2 2h-5a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v5h5V4h-5zm0 9h5a2 2 0 012 2v5a2 2 0 01-2 2h-5a2 2 0 01-2-2v-5a2 2 0 012-2zm0 2v5h5v-5h-5z"/>
+                    <path
+                    d="M4 2h5a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v5h5V4H4zm0 9h5a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2v-5a2 2 0 012-2zm0 2v5h5v-5H4zM15 2h5a2 2 0 012 2v5a2 2 0 01-2 2h-5a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v5h5V4h-5zm0 9h5a2 2 0 012 2v5a2 2 0 01-2 2h-5a2 2 0 01-2-2v-5a2 2 0 012-2zm0 2v5h5v-5h-5z"
+                    />
                 </svg>
-
-                <select class="input__text" id="category" name="options" title="options">
-                    <option value="options-choice" selected>Tutte le categorie</option>
+                <select class="input__text" id="category" title="input">
+                    <option value="all" selected>Tutte le categorie</option>
                     <option value="first-option">Motori</option>
                     <option value="second-option">Generale</option>
                     <option value="third-option">Casa</option>
@@ -89,148 +170,154 @@
                 </div>
             </div>
 
-            <div>
-                <p class="search__caption bold">Dove?</p>
+            <!-- 3 FORM -->
+            <div class="first-form">
+                <p class="search-form-text bold">Dove?</p>
                 <div class="input">
-                <svg class="input__icon" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Pin" stroke="none" stroke-width="1" fill="#aeb9c6" fill-rule="evenodd">
-                    <path d="M12 22c-5.333-5.054-8-9.054-8-12a8 8 0 1116 0c0 2.946-2.667 6.946-8 12zM6 10c0 2.008 1.969 5.156 6 9.207 4.031-4.051 6-7.2 6-9.207a6 6 0 10-12 0zm6 3a3 3 0 110-6 3 3 0 010 6zm0-2a1 1 0 100-2 1 1 0 000 2z"></path>
-                    </g>
-                </svg>
-                <input class="input__text" type="text" name="location" id="location" placeholder="Comune, Provincia o Regione"/>
+                    <svg class="input__icon" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http:// www.w3.org/1999/xlink">
+                    </svg>
+                    <input class="input__text" type="text" name="location" id="location" placeholder="Comune, Provincia o   Regione">
                 </div>
             </div>
 
-            <!-- SEARCH BUTTON -->
-                <div class="col">
-                    <span class="material-symbols-outlined">search</span>
+            <!-- SEARCH RED BUTTON -->
+            <div class="col">
+                <div class="input input--red-btn">
+                    <svg class="input__icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#fff" d="M15.597 14.205a.989.989 0 01.098.086l5.014 5.014a.993.993 0 11-1.404 1.404l-5.014-5.014a1.002 1.002 0 01-.086-.098 7 7 0 111.392-1.392zM10 15a5 5 0 100-10 5 5 0 000 10z"
+                    />
+                </svg>
+                <span class="input__icon bold">cerca</span>
+                <input type="submit" value="" title="input">
                 </div>
-
-            </form>
+            </div>
         </section>
-        </main>
 
         <!-- COLORED BOXES SECTION -->
         <section class="explore">
-                <h2 class="box-title">Esplora le nostre sezioni</h2>
-                <div class="rows">
-            
-                    <!-- BLUE SECTION -->
-                <div class="blue box">
-                    <img class="box-logo" src="./img/motori-desktop-white.svg" alt="Motori" />
-                    <button class="box-btn">Cerca in Motori</button>
-                </div>
-
-                <!--YELLOW SECTION  -->
-                <div class="yellow box">
-                    <img class="box-logo" src="./img/market-desktop-white.svg" alt="Market" />
-                    <button class="box-btn">Cerca in Market</button>
-                </div>
-
-                <!-- PURPLE SECTION -->
-                <div class="purple box">
-                    <img class="box-logo" src="./img/immobili-desktop-white.svg" alt="Immobili" />
-                    <button class="box-btn">Cerca in Immobili</button>
-                </div>
-
-                <!-- GREEN SECTION -->
-                <div class="green box">
-                    <img class="box-logo" src="./img/lavoro-desktop-white.svg" alt="Lavoro" />
-                    <button class="box-btn">Cerca in Lavoro</button>
-                </div>
+            <h2 class="box-title">Esplora le  nostre sezioni</h2>
+            <div class="rows">
+                
+            <!-- BLUE SECTION -->
+            <div class="blue box">
+                <img class="box-logo mobile-box" src="./img/motori-desktop-white.svg"  alt="Motori">
+                <button class="box-btn">Cerca in Motori</button>
             </div>
-        </section>
 
+            <!--YELLOW SECTION  -->
+            <div class="yellow box">
+                <img class="box-logo mobile-box" src="./img/market-desktop-white.svg"  alt="Market">
+                <button class="box-btn">Cerca in Market</button>
+            </div>
+            
+            <!-- PURPLE SECTION -->
+            <div class="purple box">
+                <img class="box-logo mobile-box" src="./img/immobili-desktop-white.svg"   alt="Immobili">
+                <button class="box-btn">Cerca in Immobili</button>
+            </div>
+
+            <!-- GREEN SECTION -->
+            <div class="green box">
+                <img class="box-logo mobile-box" src="./img/lavoro-desktop-white.svg"  alt="Lavoro">
+                <button class="box-btn">Cerca in Lavoro</button>
+            </div>
+        </div>
+    </section>
 
         <!-- TUTTO SUBITO SECTION-->
-        <section class="paga-subito">
-            <div class="paga-subito-text">
-                <h2>Prova Tutto Subito</h2><p>Il nostro servizio di <strong>pagamento sicuro</strong> e
+        <section class="tutto-subito">
+            <div class="tutto-subito-text">
+                <h2>Prova Tutto Subito<h2><p>Il nostro servizio di <strong>pagamento sicuro</strong> e
                 <strong>spedizione integrata</strong>.
                 </p>
-                <a class="bold text-red" href="#">Scopri</a>
+                <a class="bold text-red"    href="#">Scopri</a>
             </div>
 
+            <!-- FIRST OPTION -->
             <div class="paga-subito-container box-1">
-                <a href="#" class="btn subito-button">Paga in sicurezza</a>
+                <a href="#" class="btn  subito-button bold">Paga in sicurezza</a>
             </div>
-
-
+            <!-- SECOND OPTION -->
             <div class="paga-subito-container box-2">
-                <a href="#" class="btn subito-button">Vendi gratis</a>
+                <a href="#" class="btn  subito-button bold">Vendi gratis</a>
             </div>
         </section>
 
-
+        
         <!-- INSERISCI ANNUNCIO SECTION -->
         <section class="inserisci-annuncio">
             <div class="inserisci-annuncio-text">
-                <h2>Comincia a guadagnare</h2>
-                <p>Dai al tuo usato una seconda occasione: vendi quello che non usi più, subito.</p>
+            <h2>Comincia a guadagnare</h2>
+            <p>Dai al tuo usato una seconda occasione: vendi quello che non usi più, subito.</p>
             </div>
-            <div>
-                <a class="text-button red-button" href="#">
+            <a class="btn btn--red" href="#">
                 <svg class="btn__img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm0-2h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm5 8h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3H8a1 1 0 0 1 0-2h3V8a1 1 0 0 1 2 0v3z"></path>
+                    <path
+                    d="M8 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm0-2h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm5 8h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3H8a1 1 0 0 1 0-2h3V8a1 1 0 0 1 2 0v3z">
+                    </path>
                 </svg>
-                <span class="text-button red-button btn">Inserisci annuncio</span>
-                </a>
-            </div>
+            <span class="btn__text">Inserisci annuncio</span>
+            </a>
         </section>
-
 
         <!-- GREEN SECTION -->
-        <section>
-            <div class="green-section">
-                <div class="green-image"></div>
-                <div class="green-section-side-text">
-                    <h4>Subito</h4>
+        <section class="green-widget">
+            <a href="#">
+                <div class="green-section">
+                    <div class="green-image"></div>
+                    <div class="green-section-side-text">
+                    <h4>subito</h4>
                     <h2>La second hand non è una seconda scelta</h2>
-                    <p>Fai la scelta giusta per te e per il pianeta</p>
+                    <p>Fai la scelta giusta per te e per il pianeta.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </section>
-
 
         <!-- SAFE SECTION -->
         <section class="safe-section-s">
             <h2>Rendiamo sicuri i tuoi affari</h2>
             <div class="s-section">
-                <!-- FIRST IMG -->
-                <a href="#" class="safe-section img-1">
-                    <div class="safe-text">
-                        <span class="safe-sub-text">Consigli: i tuoi affari in sicurezza</span>
-                        <p class="par-text">
-                            Scopri di più
-                        </p>
-                    </div>
-                </a>
-                <!-- SECOND IMG -->
-                <a href="#" class="safe-section img-2">
-                    <div class="safe-text">
-                        <span class="safe-sub-text">Consigli: i tuoi affari in sicurezza</span>
-                        <p class="par-text">Scopri di più</p>
-                    </div>
-                </a>
-                <!-- THIRD IMG -->
-                <a href="#" class="safe-section img-3">
-                    <div class="safe-text">
-                        <span class="safe-sub-text">Consigli: i tuoi affari in sicurezza</span>
-                        <p class="par-text">Scopri di più</p>
-                    </div>
-                </a>
-            </div>     
+
+            <!-- FIRST IMG -->
+            <a class="safety__box box--safety1" href="#">
+                <div class="safety__text">
+                    <span class="text-grey bold">Consigli: i tuoi affari in sicurezza</span>
+                    <p class="text-red text-small">Scopri di più</p>
+                </div>
+            </a>
+
+            <!-- SECOND IMG -->
+            <a class="safety__box box--safety2" href="#">
+                <div class="safety__text">
+                    <span class="text-grey bold">Le truffe: come riconoscerle</span>
+                    <p class="text-red text-small">Scopri di più</p>
+                </div>
+            </a>
+
+            <!-- THIRD IMG -->
+            <a class="safety__box box--safety3" href="#">
+                <div class="safety__text">
+                    <span class="text-grey bold">Crea un profilo autentico</span>
+                    <p class="text-red text-small">Scopri di più</p>
+                </div>
+            </a>
+            </div>
         </section>
 
         <!-- DOWNLOAD SECTION -->
-        <div class="download-section">
-            <h2>Scarica l'App ufficiale di Subito</h2>
-            <p>Cerca tra migliaia di annunci e inserisci i tuoi, ovunque tu sia.</p>
+        <section class="download-section">
+            <h3 class="app-download-section">Scarica l'App ufficiale di Subito.</h3>
+            <p class="text-small">Cerca tra migliaia di annunci e inserisci i tuoi, ovunque tu sia.</p>
             <div class="app-widget">
-                <img src="./img/google-play-badge.svg" alt="playstore img" id="google-play">
+                <a href="#">
+                    <img src="./img/google-play-badge.svg" alt="google-play">
+                </a>
+            <a href="#">
                 <img src="./img/app-store-badge.svg" alt="appstore img">
+            </a>
             </div>
-        </div>
+        </section>
 
         <!------------------------------------- LAST LINKS SECTION ------------------------------------->
         <div class="last-section">
@@ -241,19 +328,20 @@
                 <div class="text-box">
                     Auto usate - Moto usate - Auto elettriche usate - Auto ibride usate - Auto diesel usate - Ford - Mercedes - Opel - Alfa Romeo - Jeep - Hyundai - Toyota - Ducati - Harley Davidson - Honda - Kawasaki - KTM - Piaggio - Suzuki - Aprilia
                     <p>Fiat</p>
-                    Fiat 500 - Fiat Panda - Fiat Doblo - Fiat Punto - Fiat 600 - Fiat Tipo - Fiat 500l - Fiat Panda 4x4 - Fiat Scudo - Fiat Ducato
+                    Fiat 500 - Fiat Panda - Fiat Doblo - Fiat Punto - Fiat 600 - Fiat Tipo - Fiat 500l - Fiat Panda 4x4 - Fiat    Scudo - Fiat Ducato
                     <p>Renault</p>  
-                    Renault Captur - Renault Clio - Renault Kadjar - Renault Trafic - Renault Twingo - Renault Kangoo - Renault Scenic - Renault 4 - Renault Megane - Renault Zoe
+                    Renault Captur - Renault Clio - Renault Kadjar - Renault Trafic - Renault Twingo - Renault Kangoo -   Renault Scenic - Renault 4 - Renault Megane - Renault Zoe
                     <p>Peugeot</p>
-                    Peugeot 3008 - Peugeot 208 - Peugeot 2008 - Peugeot 308 - Peugeot 5008 - Peugeot 107 - Peugeot Rifter - Peugeot Partner - Peugeot 207 - Peugeot Traveller
+                    Peugeot 3008 - Peugeot 208 - Peugeot 2008 - Peugeot 308 - Peugeot 5008 - Peugeot 107 - Peugeot Rifter -   Peugeot Partner - Peugeot 207 - Peugeot Traveller
                     <p>BMW</p>
                     Bmw x1 - Bmw serie 1 - Bmw x3 - Bmw Motorrad - Bmw x4 - Bmw z4 - Bmw x2 - Bmw serie 3 - Bmw x5
                     <p>Volkswagen</p>
-                    Volkswagen Polo - Volkswagen Tiguan - Volkswagen Up - Volkswagen Golf - Volkswagen California - Volkswagen T roc - Volkswagen Transporter - Volkswagen T cross - Volkswagen Caddy - Volkswagen Passat
+                    Volkswagen Polo - Volkswagen Tiguan - Volkswagen Up - Volkswagen Golf - Volkswagen California - Volkswagen    T roc - Volkswagen Transporter - Volkswagen T cross - Volkswagen Caddy - Volkswagen Passat
                     <p>Audi</p>
                     Audi A1 - Audi A3 - Audi Q3 - Audi TT - Audi Q5 - Audi A4 - Audi Q2 - Audi A5 - Audi A6 - Audi Q3 Sportback</p>
                 </div>
             </div>
+
             <!-- 2 SECTION -->
             <div>
                 <h5 class="colored-title yellow-text">market</h5>
@@ -261,6 +349,7 @@
                     Gatto - Golden retriever - Bulldog francese - Cani - Border collie - Labrador - Pitbull - Bici pieghevole - Bici elettrica pieghevole - Bici da corsa usate - Bicicletta pedalata assistita - Accessori bici - Cyclette usata - Ikea armadi - Scaffali ikea - Poltrona frau - Libreria scolastica - Sedie usate - Cellulari usati - Iphone usati - Smartphone usati - Cellulari usati Milano
                 </div>
             </div>
+
             <!-- 3 SECTION -->
             <div>
                 <h5 class="colored-title purple-text">immobili</h5>
@@ -268,6 +357,7 @@
                     Case in vendita - Case in affitto - Case in vendita Bolzano - Rent to buy - Affitto Roma - Affitto Milano - Case in vendita Genova - Case in vendita Bologna - Affitti Torino - Monolocale affitto Milano - Vendita case Lodi - Affitti Palermo - Affitto Bolzano - Appartamenti in vendita Milano - Affitto Genova - Appartamenti in vendita a Palermo - Appartamenti in vendita Roma - Affitti Napoli - Appartamenti in vendita a Torino - Case in vendita Napoli centro
                 </div>
             </div>
+
             <!-- 4 SECTION -->
             <div class="fourth-text-section">
                 <h5 class="colored-title green-text">lavoro</h5>
@@ -300,20 +390,20 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <ul>
+                <li class="links">
+                    <a href="#">Chi siamo</a>
+                    <a href="#">Lavora con noi</a>
+                    <a href="#">Sostenibilità</a>
+                    <a href="#">Magazine</a>
+                    <a href="#">InfoJobs</a>
+                    <a href="#">Mappa del sito</a>
+                </li>
+            </ul>
+            </div>
 
-                <div>
-                    <ul>
-                        <li class="links">
-                            <a href="#">Chi siamo</a>
-                            <a href="#">Lavora con noi</a>
-                            <a href="#">Sostenibilità</a>
-                            <a href="#">Magazine</a>
-                            <a href="#">InfoJobs</a>
-                            <a href="#">Mappa del sito</a>
-                        </li>
-                    </ul>
-                </div>
-
+            <!-- FOLLOW US ON SECTION -->
             <div>
                 <h5>Seguici su</h5>
                 <ul>
@@ -326,6 +416,7 @@
                 </ul>
             </div>
 
+            <!-- DOWNLOAD LAST SECTION -->
             <div>
                 <h5>Scarica gratis l'App</h5>
                 <ul>
@@ -342,6 +433,6 @@
             <img src="./img/grey-short.svg" alt="subito logo img">
             <p>© 2022 Subito.it - P.IVA 05526340962</p>
         </div>
-    </div>
-</body>
+        </div>
+    </body>
 </html>
