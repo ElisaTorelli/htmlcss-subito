@@ -272,8 +272,14 @@ p {
 }
 
 .tutto-subito-text p{
-    color: #7a7c7f;
-    line-height: 24px;
+    color: #a6a6a6;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.text-red{
+    color: #f9423a;
+    font-size: 12px;
 }
 
 .paga-subito-container{
@@ -633,6 +639,11 @@ span.input__icon{
         box-shadow: none;
     }
 
+    /* TUTTO SUBITO RESPONSIVE TEXT */
+    .tutto-subito-text{
+        padding-left: 14px;
+    }
+
     /* RESPONSIVE COLORED BOXES SETTINGS */
     .explore__title {
         font-size: 16px;
@@ -655,6 +666,12 @@ span.input__icon{
         width: 100%;
         margin-top: 2em;
         border: 0;
+    }
+
+    .last-section,
+    .links-section{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -748,12 +765,18 @@ span.input__icon{
     .subito-button{
         bottom: -50px;
         display: block;
+        font-size: 13px;
         height: 32px;
         margin: 0;
         position: absolute;
         width: 100%;
     }
 
+    .tutto-subito-text{
+        padding-left: 14px;
+    }
+
+    /* COMINCIA A GUADAGNARE PHONE RESPONSIVE SECTION */
     .inserisci-annuncio{
         align-items: flex-end;
         background-image: url("./img/001_MOBILE_inserisciannuncio_small.svg");
@@ -769,7 +792,7 @@ span.input__icon{
     }
 
     .inserisci-annuncio-text{
-        margin-left: 0;
+        padding-left: 10px;
     }
 
     .red-button{
@@ -808,6 +831,7 @@ span.input__icon{
     .green-image {
         flex-basis: 100%;
         padding-top: 56%;
+        margin-left: 30px;
     }
 
     .green-section-side-text {
@@ -837,6 +861,15 @@ span.input__icon{
         bottom: 0;
     }
 
+    .safe-section-s{
+        padding-left: 12px;
+    }
+
+    .bold{
+        font-weight: 700;
+        color: #3c4858;
+    }
+
     /* DOWNLOAD SECTION */
     .app-widget {
         align-items: center;
@@ -847,5 +880,11 @@ span.input__icon{
 
     .app-widget > a:last-child {
         margin-top: 1em;
+    }
+
+    .last-section,
+    .links-section{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
